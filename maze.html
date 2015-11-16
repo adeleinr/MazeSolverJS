@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lets solve a maze</title>
+    <style>
+      #maze-display-canvas,
+      #loading-mask {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <button id="solve">Solve</button>
+    </p>
+    <div id="loading-mask">Loading Maze ...</div>
+    <canvas id="maze-display-canvas" width="1010" height="1010"></canvas>
+  </body>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="priorityqueue.js"></script>
+  <script src="pathalgo.js"></script>
+  <script src="mazesolver.js"></script>
+  <script>
+    var maze = new Maze();
+  </script>
+</html>
